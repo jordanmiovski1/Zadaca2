@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="data.js"></script>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div class="container-2">
+        <div class="flex-box-container-2" id="firstFour">	
+		<script> 
+		function loadFirstFour() {
+
+for (let index = 0; index <4; index++)
+ {
+	 let list = document.getElementById("firstFour");
+	 
+	 
+	 
+	 let img1 = document.createElement("img");
+		img1.style.position = 'absolute';		
+		img1.src = "C:/Users/User/Desktop/FrontEnd/instagram-logo.svg";
+		
+		
+		list.appendChild(div);
+        div.appendChild(img);
+		div.appendChild(img1);
+
+        let div = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = data.images[index].image;
+        img.width = 300;
+        img.height = 300;
+		list.appendChild(div);
+        div.appendChild(img);
+		
+		
+		
+		
+    };
+}
+
+loadFirstFour();		
+		</script>
+		
+		</div>
+		        <div class="flex-box-container-2" id="flex-cat-gen">
+
+        </div>
+		
+        <div class="flex-box-container-2">
+            <div>
+                <button class="btn btn-success" id="cat-generator" onclick="loadData()">Load More</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
